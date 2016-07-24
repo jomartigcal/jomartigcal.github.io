@@ -6,6 +6,10 @@ img{
   border: 0px;
 }
 
+p {
+  text-align: justify;
+}
+
 ::-moz-selection {
   background-color: #6ab344;
   color: #fff;
