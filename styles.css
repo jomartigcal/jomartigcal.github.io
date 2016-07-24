@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-a img{
+img{
   border: 0px;
 }
 
@@ -14,6 +14,11 @@ a img{
 ::selection {
   background-color: #6ab344;
   color: #fff;
+}
+
+.jt-content {
+  position:absolute;
+  width:100%;
 }
 
 .jt-header .mdl-menu__container {
@@ -66,24 +71,28 @@ a img{
 }
 
 .jt-drawer-separator {
-height: 1px;
-background-color: #dcdcdc;
-margin: 8px 0;
+  height: 1px;
+  background-color: #dcdcdc;
+  margin: 8px 0;
 }
 
 .jt-drawer .mdl-navigation__link.mdl-navigation__link {
-font-size: 14px;
-color: #757575;
+  font-size: 14px;
+  color: #757575;
 }
 
 .jt-drawer span.mdl-navigation__link.mdl-navigation__link {
-color: #8bc34a;
+  color: #8bc34a;
 }
 
 .jt-drawer .mdl-layout-title {
   position: relative;
   background: #2196F3;
   height: 160px;
+}
+
+.jt-title {
+  color:white;
 }
 
 /**** Mobile layout ****/
