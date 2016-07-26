@@ -1,15 +1,15 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Contact Jomar Tigcal</title>
+    <title>Tigcal Runs</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
     <meta name="author" content="Jomar Tigcal" />
-    <meta name="description" content="Personal Website of Jomar Tigcal" />
-    <meta name="keywords" content="jomar tigcal, jomar c. tigcal, jomar, tigcal, personal website of jomar tigcal" />
+    <meta name="description" content="Runs of Jomar Tigcal" />
+    <meta name="keywords" content="jomar tigcal, jomar c. tigcal, jomar, tigcal, runs of jomar tigcal" />
     <meta name="theme-color" content="#2196F3">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
@@ -23,10 +23,15 @@
   </head>
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-
       <div class="jt-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row" style="color:#2196F3;">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title toolbar">Tigcal Runs</span>
         </div>
+        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary">
+          <a href="#map" class="mdl-layout__tab is-active">Map</a>
+          <a href="#list" class="mdl-layout__tab">List</a>
+          <a href="http://jomar.tigcal.com/search/label/Running" class="mdl-layout__tab">Posts</a>
+      </div>
       </div>
 
       <div class="jt-drawer mdl-layout__drawer">
@@ -38,24 +43,32 @@
           <a class="mdl-navigation__link" href="about.html">About</a>
           <a class="mdl-navigation__link" href="http://projects.tigcal.com">Projects</a>
           <a class="mdl-navigation__link" href="http://talks.tigcal.com">Talks and Workshops</a>
-          <a class="mdl-navigation__link" href="runs.html">Runs</a>
-          <a class="mdl-navigation__link" href="#">Contact</a>
+          <a class="mdl-navigation__link" href="#">Runs</a>
+          <a class="mdl-navigation__link" href="contact.html">Contact</a>
         </nav>
       </div>
 
       <div class="jt-content mdl-layout__content">
-        <div class="mdl-grid grid-max-width">
-          <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-            <div class="mdl-grid">
-              <h3 class="mdl-cell mdl-cell--12-col mdl-typography--headline" style="text-align:center;">Contact Me</h3>
-              <div class="mdl-cell mdl-cell--12-col mdl-card__supporting-text">
-                <p>If you have any comments/suggestion/s, feel free to contact me by filling-up form below:</p>
-                <p><iframe src="https://spreadsheets3.google.com/embeddedform?formkey=dDRrY254eVRwUjZlU0NMalYxdVJsUmc6MQ" style="border: 0;height:900px;width: 100%;">&lt;p&gt;&lt;p&gt;Loading...&lt;/p&gt;&lt;/p&gt;</iframe></p>
+        <div class="mdl-layout__tab-panel is-active" id="map">
+          <div class="mdl-grid grid-max-width">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-grid" style="width:100%;">
+                <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zrpbjWAryprw.kneUza_rw8nk" style="width:100%;height: 500px; border: 0;">Loading..&lt;/p&gt;&lt;/p&gt;</iframe>
               </div>
             </div>
           </div>
         </div>
-      </div>
+        <div class="mdl-layout__tab-panel" id="list">
+          <div class="mdl-grid grid-max-width">
+            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+              <div class="mdl-grid" style="width:100%;">
+                <iframe
+    src="https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AlJK39HMKvO3dHUxZTNWTnd3eGNhWkJhT1BNOFYyT0E&single=true&gid=0&output=html" style="width:100%;height: 500px; border: 0;">&lt;p&gt;&lt;p&gt;Loading..&lt;/p&gt;&lt;/p&gt;</iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>  
     </div>
     
     <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
