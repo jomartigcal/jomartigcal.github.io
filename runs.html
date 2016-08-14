@@ -27,11 +27,6 @@
         <div class="mdl-layout__header-row">
           <span class="mdl-layout-title toolbar">Tigcal Runs</span>
         </div>
-        <div class="mdl-layout__tab-bar mdl-js-ripple-effect mdl-color--primary">
-          <a href="#map" class="mdl-layout__tab is-active">Map</a>
-          <a href="#list" class="mdl-layout__tab">List</a>
-          <a href="http://jomar.tigcal.com/search/label/Running" class="mdl-layout__tab">Posts</a>
-      </div>
       </div>
 
       <div class="jt-drawer mdl-layout__drawer">
@@ -41,7 +36,7 @@
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="/">Home</a>
           <a class="mdl-navigation__link" href="about.html">About</a>
-          <a class="mdl-navigation__link" href="http://projects.tigcal.com">Projects</a>
+          <a class="mdl-navigation__link" href="projects/projects.html">Apps and Projects</a>
           <a class="mdl-navigation__link" href="talks.html">Talks and Workshops</a>
           <a class="mdl-navigation__link" href="#">Runs</a>
           <a class="mdl-navigation__link" href="contact.html">Contact</a>
@@ -49,23 +44,40 @@
       </div>
 
       <div class="jt-content mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="map">
-          <div class="mdl-grid grid-max-width">
-            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-              <div class="mdl-grid" style="width:100%;">
-                <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zrpbjWAryprw.kneUza_rw8nk" style="width:100%;height: 500px; border: 0;">Loading..&lt;/p&gt;&lt;/p&gt;</iframe>
-              </div>
+        <div class="mdl-grid grid-max-width">
+          <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text" id="map">Map</h2>
+            </div>
+            <div class="mdl-card__media">
+              <iframe src="https://mapsengine.google.com/map/u/0/embed?mid=zrpbjWAryprw.kneUza_rw8nk" style="width:100%;height: 500px; border: 0;">Loading..&lt;/p&gt;&lt;/p&gt;</iframe>
             </div>
           </div>
         </div>
-        <div class="mdl-layout__tab-panel" id="list">
-          <div class="mdl-grid grid-max-width">
-            <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
-              <div class="mdl-grid" style="width:100%;">
-                <iframe
-    src="https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AlJK39HMKvO3dHUxZTNWTnd3eGNhWkJhT1BNOFYyT0E&single=true&gid=0&output=html" style="width:100%;height: 500px; border: 0;">&lt;p&gt;&lt;p&gt;Loading..&lt;/p&gt;&lt;/p&gt;</iframe>
-              </div>
+
+        <div class="mdl-grid grid-max-width">
+          <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text" id="list">List</h2>
             </div>
+            <div class="mdl-card__media">
+              <iframe
+    src="https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=0AlJK39HMKvO3dHUxZTNWTnd3eGNhWkJhT1BNOFYyT0E&single=true&gid=0&output=html" style="width:100%;height: 500px; border: 0;">&lt;p&gt;&lt;p&gt;Loading..&lt;/p&gt;&lt;/p&gt;</iframe>
+            </div>
+          </div>
+        </div>
+
+        <div class="mdl-grid grid-max-width">
+          <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--4dp">
+            <div class="mdl-card__title">
+              <h2 class="mdl-card__title-text" id="posts">Posts</h2><br />
+            </div>
+            <div class="mdl-card__supporting-text">
+                I have been posting about my runs in my blog. You can check the posts with the <a href="http://jomar.tigcal.com/search/label/Running">Running</a> tag on my blog.
+            </div>
+            <div class="mdl-card__actions">
+                <a href="contact.html" class="mdl-button">Read Running posts</a>
+              </div>
           </div>
         </div>
       </div>  
