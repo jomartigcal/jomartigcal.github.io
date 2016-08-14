@@ -159,6 +159,11 @@ p {
   z-index: 99;
 }
 
+.mdl-card__actions a {
+  color: #00BCD4;
+  margin: 0;
+}
+
 /**** Mobile layout ****/
 @media (max-width: 900px) {
   .jt-navigation-container {
