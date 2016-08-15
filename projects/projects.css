@@ -4,6 +4,12 @@ html, body {
   padding: 0;
 }
 
+.mdl-layout-title {
+  position: relative;
+  background: #2196F3;
+  height: 160px;
+}
+
 .toolbar {
   text-color:white;
   padding-left: 40px;
@@ -12,35 +18,7 @@ html, body {
 .projects-layout .mdl-layout__header-row {
   padding-left: 40px;
 }
-.projects-layout .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
-  display: none;
-}
-.projects-layout .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar,
-.projects-layout .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar-container {
-  overflow: visible;
-}
-.projects-layout .mdl-layout__tab-bar-container {
-  height: 64px;
-}
-.projects-layout .mdl-layout__tab-bar {
-  padding: 0;
-  padding-left: 16px;
-  box-sizing: border-box;
-  height: 100%;
-  width: 100%;
-}
-.projects-layout .mdl-layout__tab-bar .mdl-layout__tab {
-  height: 64px;
-  line-height: 64px;
-}
-.projects-layout .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
-  background-color: white;
-  height: 4px;
-}
-.projects-layout div > .mdl-layout__tab-panel {
-  padding: 8px;
-  padding-top: 48px;
-}
+
 .projects-layout .mdl-card {
   height: auto;
   display: -webkit-flex;
@@ -181,38 +159,6 @@ html, body {
 }
 .projects-layout .mdl-card .mdl-card__supporting-text > h3:first-child {
   margin-bottom: 24px;
-}
-.projects-layout .mdl-layout__tab-panel:not(#overview) {
-  background-color: white;
-}
-.projects-layout #features section {
-  margin-bottom: 72px;
-}
-.projects-layout #features h4, #features h5 {
-  margin-bottom: 16px;
-}
-.projects-layout .toc {
-  border-left: 4px solid #C1EEF4;
-  margin: 24px;
-  padding: 0;
-  padding-left: 8px;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-.projects-layout .toc h4 {
-  font-size: 0.9rem;
-  margin-top: 0;
-}
-.projects-layout .toc a {
-  color: #4DD0E1;
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 28px;
-  display: block;
 }
 .projects-layout .mdl-menu__container {
   z-index: 99;
