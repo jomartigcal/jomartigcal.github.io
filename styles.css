@@ -11,6 +11,10 @@ p {
   text-align: justify;
 }
 
+a {
+  color: #00BCD4;
+}
+
 ::-moz-selection {
   background-color: #6ab344;
   color: #fff;
