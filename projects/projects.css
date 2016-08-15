@@ -17,7 +17,7 @@ html, body {
 
 .jt-drawer .mdl-layout-title {
   position: relative;
-  background: url(images/tigcal-cover.png) no-repeat;
+  background: url(https://lh3.googleusercontent.com/-wcqiGYoBAEA/V5BM0QIwAbI/AAAAAAAAapE/nc3f9fvVk6MdRoZo6XYdBC2BoigSzEeOACL0B/s1000-fcrop64=1,00000cc5ffffcd40/IMG_20160517_185943.jpg) no-repeat;
   background-size: cover;
   height: 160px;
   color:white;
@@ -31,7 +31,7 @@ html, body {
   border-radius: 5px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
-  background: url(images/tigcal-icon.png) no-repeat;
+  background: url(https://lh3.googleusercontent.com/-MFyRSI_pTp0/VcLzaSTPmvI/AAAAAAAAUZI/v3l2ntKd8po/s512-Ic42/IMG_7227.JPG) no-repeat;
   background-size: cover;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
