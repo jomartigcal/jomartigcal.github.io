@@ -4,14 +4,8 @@ html, body {
   padding: 0;
 }
 
-.mdl-layout-title {
-  position: relative;
-  background: #2196F3;
-  height: 160px;
-}
-
 .toolbar {
-  text-color:white;
+  color:white;
   padding-left: 40px;
 }
 
@@ -185,4 +179,34 @@ html, body {
 }
 .projects-layout .mdl-menu__container {
   z-index: 99;
+}
+
+.projects-layout .mdl-layout.is-small-screen .mdl-layout__tab-bar .mdl-button {
+  display: none;
+}
+.projects-layout .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar,
+.projects-layout .mdl-layout:not(.is-small-screen) .mdl-layout__tab-bar-container {
+  overflow: visible;
+}
+.projects-layout .mdl-layout__tab-bar-container {
+  height: 64px;
+}
+.projects-layout .mdl-layout__tab-bar {
+  padding: 0;
+  padding-left: 16px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+.projects-layout .mdl-layout__tab-bar .mdl-layout__tab {
+  height: 64px;
+  line-height: 64px;
+}
+.projects-layout .mdl-layout__tab-bar .mdl-layout__tab.is-active::after {
+  background-color: white;
+  height: 4px;
+}
+.projects-layout div > .mdl-layout__tab-panel {
+  padding: 8px;
+  padding-top: 48px;
 }
