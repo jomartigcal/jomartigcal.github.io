@@ -95,7 +95,7 @@ a {
 
 .jt-drawer .mdl-layout-title {
   position: relative;
-  background: url(images/tigcal-cover.png) no-repeat;
+  background: url(images/jomar-cover.png) no-repeat;
   background-size: cover;
   height: 160px;
   color:white;
@@ -109,7 +109,7 @@ a {
   border-radius: 5px;
   -webkit-border-radius: 25px;
   -moz-border-radius: 25px;
-  background: url(images/tigcal-icon.png) no-repeat;
+  background: url(images/jomar-icon.png) no-repeat;
   background-size: cover;
   box-shadow: 0 0 8px rgba(0, 0, 0, .8);
   -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
