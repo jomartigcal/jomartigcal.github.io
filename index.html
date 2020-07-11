@@ -1,115 +1,170 @@
 <!doctype html>
 <html lang="en">
-  <head>
-  	<title>Jomar Tigcal</title>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-
-    <meta name="author" content="Jomar Tigcal" />
-	 <meta name="description" content="Personal Website of Jomar Tigcal" />
-	 <meta name="keywords" content="jomar tigcal, jomar c. tigcal, jomar, tigcal, personal website of jomar tigcal" />
-	 <meta name="theme-color" content="#2196F3">
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue-green.min.css">
-    <link rel="stylesheet" href="styles.css">
-
-    <link rel="shortcut icon" href="images/jomar-icon.png">
-    <link rel="apple-touch-icon" href="images/jomar-icon.png">
-    <link rel="icon" sizes="192x192" href="images/jomar-icon.png">
-
-    <style>
-   		#header {
-   			background:#2196F3;
-   			height:150px
-   		}
-		.jt-content {
-			text-align: center;
-			position:absolute;
-			width:100%;
-		}
-		img {
-   			border:0px;
-   		}
-   	.photo {
-			width: 150px;
-			height: 150px;
-			display: block;
-			margin-left: auto;
-			margin-right: auto;
-			margin-top: -75px;
-			border-radius: 75px;
-			-webkit-border-radius: 75px;
-			-moz-border-radius: 75px;
-			background: url(images/jomar-icon.png) no-repeat;
-			background-size: cover;
-			box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-			-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-			-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-		}
-		.icon {
-			margin:5px;
-      width:32px;
-		}    
-    </style>
-  </head>
-  <body>
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <div class="jt-header mdl-layout__header mdl-layout__header--waterfall">
-        <div class="mdl-layout__header-row" style="color:#2196F3;">
+    <head>
+        <title>Jomar Tigcal</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta name="author" content="Jomar Tigcal" />
+        <meta name="description" content="Personal Website of Jomar Tigcal" />
+        <meta name="keywords" content="jomar tigcal, jomar c. tigcal, jomar, tigcal, personal website of jomar tigcal" />
+        <meta name="theme-color" content="#2196F3">
+        <link rel="shortcut icon" href="images/jomar-icon.png">
+        <link rel="apple-touch-icon" href="images/jomar-icon.png">
+        <link rel="icon" sizes="192x192" href="images/jomar-icon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" />
+        <link href="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet' type='text/css'>
+        <style>
+			body {
+	            margin: 0;
+	            padding: 0px;
+	            color: #666666;
+	            font-family: "Roboto", sans-serif;
+	            --mdc-theme-primary: #2196F3;
+	            --mdc-theme-secondary: #4CAF50;
+            }
+            #burger-menu {
+	            display: inline-block;
+	            text-decoration: none;
+            }
+            .mdc-top-app-bar--fixed {
+				background-color: var(--mdc-theme-primary);
+            }
+            .mdc-top-app-bar--fixed-adjust {
+	            margin-left: 16px;
+	            margin-right: 16px;
+            }
+            .mdc-drawer {
+				width: 320px;
+            }
+            .mdc-drawer .mdc-drawer__title {
+				color: var(--mdc-theme-primary);
+            }
+            .mdc-drawer .mdc-list-item--activated {
+				color: var(--mdc-theme-primary);
+            }
+            .mdc-drawer .mdc-list-item--activated .mdc-list-item__graphic {
+				color: var(--mdc-theme-primary);
+            }
+            .mdc-layout-margined {
+	            margin-left: 10%;
+	            margin-right: 10%;
+            }
+            .mdc-list-item {
+				font-size: 13px;
+            }
+            #header {
+	            background:#2196F3;
+	            height:144px
+            }
+            .jt-content {
+	            text-align: center;
+	            position:absolute;
+	            margin: 0px;
+	            width:100%;
+            }
+            .photo {
+	            width: 144px;
+	            height: 144px;
+	            display: block;
+	            margin-left: auto;
+	            margin-right: auto;
+	            margin-top: -75px;
+	            border-radius: 75px;
+	            -webkit-border-radius: 75px;
+	            -moz-border-radius: 75px;
+	            background: url(images/jomar-icon.png) no-repeat;
+	            background-size: cover;
+	            box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	            -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	            -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+            }
+            .icon {
+	            margin:5px;
+	            width:32px;
+            }
+        </style>
+        <script src="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.js"></script>  
+    </head>
+    <body>
+        <aside class="mdc-drawer mdc-drawer--modal">
+            <div class="mdc-drawer__header">
+                <h3 class="mdc-drawer__title">Jomar Tigcal</h3>
+            </div>
+            <div class="mdc-drawer__content">
+                <nav class="mdc-list">
+                    <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+                    <span class="mdc-list-item__text">Home</span>
+                    </a>
+                    <a class="mdc-list-item" href="about.html" aria-current="page">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">info</i>
+                    <span class="mdc-list-item__text">About</span>
+                    </a>
+                    <a class="mdc-list-item" href="projects/">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">apps</i>
+                    <span class="mdc-list-item__text">Apps and Projects</span>
+                    </a>
+                    <a class="mdc-list-item" href="talks.html">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">computer</i>
+                    <span class="mdc-list-item__text">Talks and Workshops</span>
+                    </a>
+                    <a class="mdc-list-item" href="runs.html">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">directions_run</i>
+                    <span class="mdc-list-item__text">Runs</span>
+                    </a>
+                    <a class="mdc-list-item" href="contact.html">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">feedback</i>
+                    <span class="mdc-list-item__text">Contact Us</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+        <div class="mdc-drawer-scrim"></div>
+        <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <a href="#" class="material-icons mdc-top-app-bar__navigation-icon" id="burger-menu">menu</a>
+                    <span class="mdc-top-app-bar__title">&nbsp;</span>
+                </section>
+            </div>
+        </header>
+        <div class="mdc-top-app-bar--fixed-adjust jt-content" id="main-content">
+            <div id="header">&nbsp;</div>
+            <div class="photo"></div>
+            <h1>Jomar Tigcal</h1>
+            <h2>Android Developer, Trainer, and Consultant</h2>
+            <div style="margin-left:10%;margin-right:10%;">
+                <a href="https://jomar.tigcal.com"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3fUQIKLHkAktzlQfs4xF4FeqQ07KmrnGf3acL6UWzmAK7d_ESNZAfoZjoda095NqBufMdIVDmSe9mWVleTSs5kQjRwzlUh2t7alIamG1Mrylg5EfVxmyvGrXtz3Rn6YIGmLQk5YIQZnyzv-90TEftor=s192-no"  alt="View my blog" title="View my blog" /></a>
+                <a href="https://play.google.com/store/apps/dev?id=5038784345581775968"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3czpU0OhpkwA8USwnzObXu0bPL2QX0OpZMXPKzKmWmfDKMPmWWkfq2gxglV7HVqiPz4ODqa0oz668cjDaUq0K4jvRnSZCkHYll3mEnyaDE5CVXtwFVapG8b0rso7LphIkeIYBOMHPO6pCPn-JRI1rJ9=s120-no" alt="View my apps on Google Play" title="View my apps on Google Play" /></a>
+                <a href="https://www.twitter.com/jomartigcal" alt="Follow me on Twitter" title="Follow me on Twitter"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3e51fCmRfM-XC9mSTMtTcBgG-E1zuMJz5emVQnM7JB0ef9o9Y8jNM_E_kDbQfc2apahKznh5cCjCL1NcHQQBxMucU9nNJxxCgjAMMHbS23yeXWCtWwjY4_3YlpBU9NgxI09-L0fda_Iaq6mFcbdQ5ES=s400-no" alt="Follow me on Twitter" title="Follow me on Twitter" /></a> 
+                <a href="https://www.facebook.com/jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3d_DSZA6rYftJ-noEajF3c-0R7e0yFFxiv136ZjZKDD8reitbXr_EXYY_uT3XusWERve-p85KgO5LYyD-h_HisIY-WnL0u3UeiZ4Jn70qWZ2Ncv5OQhskjLh1hb9jwin8oJX30i1SXnVaXwTD_wZTYo=w309-h310-no"  alt="View my Facebook profile" title="View my Facebook profile" /></a>    
+                <a href="https://www.linkedin.com/in/jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3d5MMU3Z5GWGkkapPbbxnwNmtw8hFTJqcy4oVMVeIuidQoZfknAYIuuEVayzKB72PJ7pPzrs5y2Z-ciw2MFSKxdi5etvoM9CUOjBX0C7CTjjzKGVE_jPO5HE92QHhl7f2vPh25-sOntMAruq86s7_Dv=w635-h540-no" alt="View my LinkedIn profile" title="View my LinkedIn profile" /></a>
+                <a href="https://github.com/jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/--0GmbhVovZs/VcQvG3Oja6I/AAAAAAAAUdE/d9zzlE4dss8/s32-Ic42/github.png" alt="Check out my Github Profile" title="Check out my Github Profile" /></a>  
+                <a href="https://speakerdeck.com/jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3evNUetnqQMfzC6eW2dSEDf3LenpT9EfR7AHUlTlgG1HeTVLARyazsb7AHxsSm0ZzvnrCtHOOoGKpm8AO9h9j_okq_YLHJIrCGtXf72chFk6lxPiFzgEtMoSemepgXowFj42ARSUppLHYtSbh6CvCOa=s512-no" alt="Check out my slides on Speaker Deck" title="Check out my slides on Speaker Deck" /></a>
+                <a href="https://medium.com/@jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/AeQfFkQ6MyPA3jp1AcXrGj5QuVuUCx_EiIpkd7X0ZDgGT3-KbBiRvWPyHajMy30dP_PNdQTdOUZQR5m7hRYeZT30_VCPveFI9ErylrQF83oAWjhBNvt9UJPAJ1w0RNxFjnDci1FAHSdviCVm-FwSchyI4bl0wQstQd1EBsWWTJ0Fzd6TQ87JDQLYf_XEQAVLFXLAUREv4OLYL92PqfhZhlowWZtdKR4-iMc5zpXTu-SefH37sCdwxlZ-YE8mtdA-trGwbp3h-WsX--PEssfLyj6D3ekbAFFVStVVgA00rd8HoS_v3eWY8ICFF9lCkiuCPgK0nTuarvumQNHh7eBv7ctv7zOLOntlpYjy8gzV40jY6rsHizUHZjwLp1jek4me0UtuMt9Rk4FBZHLHwyOBsqtqloOC8LNR9CM4Tcu9A4__HHynFEyNguS9_IIDd-f_elj_6co4I0p7eeXoot0-AA3R-m7Bag2fv_iDxYkPQKlEdVc6EG4aejpVWlEuL8cijctdxiEvqojw-YALrBsGBckpDiy9SSk1QpWDY-OHdwbdH8CedD5QjTZG-9zW7KUfKlAH8YEI6MBrK_euK8_mercrRtwCd79ozQ=s390-no" alt="View my Medium Page" title="View my Medium Page" /></a>
+                <a href="https://stackoverflow.com/users/1684946/jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3czrNJxgJVrcluMqWIqIJX2yt7mYuMx8B0u7ClgkQ9Svp06C976u36YxtdGSkxAk58eXQ2XhNHd8ImcPMl7vAEPW84kb0jvYJBhifcjU7VNGvJ2sinXNhsBnuRpxInaDkYTw3qxaeN1YSe16Gdti9bG=s64-no" alt="View my StackOverflow Profile" title="View my StackOverflow Profile" /></a> 
+                <a href="https://www.youtube.com/user/jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3ePfHtaIFY6dJrMXeb6QYrNsOr0v3JB3Sb7p1V7fJB6laCdh2don-vq7TLpgCSLHp3JjYCS-6gUax7asbgUnNFZwe9jR9Md9CH8eadCdHC3oK-nPIEPqpyI8cdshrOPghBiwu80_nv_IoL_tjr_baNM=w734-h518-no" alt="View my YouTube channel" title="View my YouTube channel" /></a>
+                <a href="mailto:jomar@tigcal.com"><img class="icon" src="images/email.png" alt="Send me an email" title="Email me" /></a>
+            </div>
         </div>
-      </div>
+        <script type="text/javascript">
+            const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+            const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+            topAppBar.setScrollTarget(document.getElementById('main-content'));
+            topAppBar.listen('MDCTopAppBar:nav', () => {
+              drawer.open = !drawer.open;
+            });
+        </script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-      <div class="jt-drawer mdl-layout__drawer">
-        <div class="mdl-layout-title">
-          <div class="thumbnail"></div>
-          Jomar Tigcal
-        </div>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="#"><i class="material-icons drawer-icon">home</i>Home</a>
-          <a class="mdl-navigation__link" href="about.html"><i class="material-icons drawer-icon">info</i> About</a>
-          <a class="mdl-navigation__link" href="projects/"><i class="material-icons drawer-icon">apps</i> Apps and Projects</a>
-          <a class="mdl-navigation__link" href="talks.html"><i class="material-icons drawer-icon">computer</i> Talks/Workshops</a>
-          <a class="mdl-navigation__link" href="runs.html"><i class="material-icons drawer-icon">directions_run</i> Runs</a>
-          <a class="mdl-navigation__link" href="contact.html"><i class="material-icons drawer-icon">call</i> Contact</a>
-        </nav>
-      </div>
-
-      <div class="jt-content mdl-layout__content">
-      	<div id="header">&nbsp;</div>
-      	<div class="photo"></div>
-      	<h1>Jomar Tigcal</h1>
-		    <h4>Android Developer, Trainer, and Consultant</h4>
-        <div style="margin-left:10%;margin-right:10%;">
-          <a href="https://jomar.tigcal.com"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3fUQIKLHkAktzlQfs4xF4FeqQ07KmrnGf3acL6UWzmAK7d_ESNZAfoZjoda095NqBufMdIVDmSe9mWVleTSs5kQjRwzlUh2t7alIamG1Mrylg5EfVxmyvGrXtz3Rn6YIGmLQk5YIQZnyzv-90TEftor=s192-no"  alt="View my blog" title="View my blog" /></a>
-          <a href="https://play.google.com/store/apps/dev?id=5038784345581775968"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3czpU0OhpkwA8USwnzObXu0bPL2QX0OpZMXPKzKmWmfDKMPmWWkfq2gxglV7HVqiPz4ODqa0oz668cjDaUq0K4jvRnSZCkHYll3mEnyaDE5CVXtwFVapG8b0rso7LphIkeIYBOMHPO6pCPn-JRI1rJ9=s120-no" alt="View my apps on Google Play" title="View my apps on Google Play" /></a>
-          <a href="https://www.twitter.com/jomartigcal" alt="Follow me on Twitter" title="Follow me on Twitter"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3e51fCmRfM-XC9mSTMtTcBgG-E1zuMJz5emVQnM7JB0ef9o9Y8jNM_E_kDbQfc2apahKznh5cCjCL1NcHQQBxMucU9nNJxxCgjAMMHbS23yeXWCtWwjY4_3YlpBU9NgxI09-L0fda_Iaq6mFcbdQ5ES=s400-no" alt="Follow me on Twitter" title="Follow me on Twitter" /></a> 
-          <a href="https://www.facebook.com/jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3d_DSZA6rYftJ-noEajF3c-0R7e0yFFxiv136ZjZKDD8reitbXr_EXYY_uT3XusWERve-p85KgO5LYyD-h_HisIY-WnL0u3UeiZ4Jn70qWZ2Ncv5OQhskjLh1hb9jwin8oJX30i1SXnVaXwTD_wZTYo=w309-h310-no"  alt="View my Facebook profile" title="View my Facebook profile" /></a>    
-          <a href="https://www.linkedin.com/in/jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3d5MMU3Z5GWGkkapPbbxnwNmtw8hFTJqcy4oVMVeIuidQoZfknAYIuuEVayzKB72PJ7pPzrs5y2Z-ciw2MFSKxdi5etvoM9CUOjBX0C7CTjjzKGVE_jPO5HE92QHhl7f2vPh25-sOntMAruq86s7_Dv=w635-h540-no" alt="View my LinkedIn profile" title="View my LinkedIn profile" /></a>
-          <a href="https://github.com/jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/--0GmbhVovZs/VcQvG3Oja6I/AAAAAAAAUdE/d9zzlE4dss8/s32-Ic42/github.png" alt="Check out my Github Profile" title="Check out my Github Profile" /></a>  
-          <a href="https://speakerdeck.com/jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3evNUetnqQMfzC6eW2dSEDf3LenpT9EfR7AHUlTlgG1HeTVLARyazsb7AHxsSm0ZzvnrCtHOOoGKpm8AO9h9j_okq_YLHJIrCGtXf72chFk6lxPiFzgEtMoSemepgXowFj42ARSUppLHYtSbh6CvCOa=s512-no" alt="Check out my slides on Speaker Deck" title="Check out my slides on Speaker Deck" /></a>
-          <a href="https://medium.com/@jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/AeQfFkQ6MyPA3jp1AcXrGj5QuVuUCx_EiIpkd7X0ZDgGT3-KbBiRvWPyHajMy30dP_PNdQTdOUZQR5m7hRYeZT30_VCPveFI9ErylrQF83oAWjhBNvt9UJPAJ1w0RNxFjnDci1FAHSdviCVm-FwSchyI4bl0wQstQd1EBsWWTJ0Fzd6TQ87JDQLYf_XEQAVLFXLAUREv4OLYL92PqfhZhlowWZtdKR4-iMc5zpXTu-SefH37sCdwxlZ-YE8mtdA-trGwbp3h-WsX--PEssfLyj6D3ekbAFFVStVVgA00rd8HoS_v3eWY8ICFF9lCkiuCPgK0nTuarvumQNHh7eBv7ctv7zOLOntlpYjy8gzV40jY6rsHizUHZjwLp1jek4me0UtuMt9Rk4FBZHLHwyOBsqtqloOC8LNR9CM4Tcu9A4__HHynFEyNguS9_IIDd-f_elj_6co4I0p7eeXoot0-AA3R-m7Bag2fv_iDxYkPQKlEdVc6EG4aejpVWlEuL8cijctdxiEvqojw-YALrBsGBckpDiy9SSk1QpWDY-OHdwbdH8CedD5QjTZG-9zW7KUfKlAH8YEI6MBrK_euK8_mercrRtwCd79ozQ=s390-no" alt="View my Medium Page" title="View my Medium Page" /></a>
-          <a href="https://stackoverflow.com/users/1684946/jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3czrNJxgJVrcluMqWIqIJX2yt7mYuMx8B0u7ClgkQ9Svp06C976u36YxtdGSkxAk58eXQ2XhNHd8ImcPMl7vAEPW84kb0jvYJBhifcjU7VNGvJ2sinXNhsBnuRpxInaDkYTw3qxaeN1YSe16Gdti9bG=s64-no" alt="View my StackOverflow Profile" title="View my StackOverflow Profile" /></a> 
-          <a href="https://www.youtube.com/user/jomartigcal"><img class="icon" src="https://lh3.googleusercontent.com/pw/ACtC-3ePfHtaIFY6dJrMXeb6QYrNsOr0v3JB3Sb7p1V7fJB6laCdh2don-vq7TLpgCSLHp3JjYCS-6gUax7asbgUnNFZwe9jR9Md9CH8eadCdHC3oK-nPIEPqpyI8cdshrOPghBiwu80_nv_IoL_tjr_baNM=w734-h518-no" alt="View my YouTube channel" title="View my YouTube channel" /></a>
-          <a href="mailto:jomar@tigcal.com"><img class="icon" src="images/email.png" alt="Send me an email" title="Email me" /></a>
-        </div>  
-    		
-      </div>
-    </div>
-    
-    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-20395667-14', 'auto');
-      ga('send', 'pageview');
-  </script>
-  </body>
+            ga('create', 'UA-20395667-14', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
 </html>
