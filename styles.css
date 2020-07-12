@@ -69,6 +69,13 @@ a {
   font-size: 13px;
 }
 
+.mdc-card {
+  padding: 16px;
+  max-width: 912px;
+  height: 100%;
+  margin: 16px auto;
+}
+
 /* MDL Styles */
 .jt-content {
   width:100%;
