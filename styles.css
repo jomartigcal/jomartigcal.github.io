@@ -1,6 +1,10 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0px;
+  color: #666666;
+  font-family: "Roboto", sans-serif;
+  --mdc-theme-primary: #2196F3;
+  --mdc-theme-secondary: #4CAF50;
 }
 
 img{
@@ -25,6 +29,54 @@ a {
   color: #fff;
 }
 
+/* Material Components */
+#burger-menu {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.mdc-top-app-bar--fixed {
+  background-color: var(--mdc-theme-primary);
+}
+
+.mdc-top-app-bar--fixed-adjust {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.mdc-drawer {
+  width: 320px;
+}
+
+.mdc-drawer .mdc-drawer__title {
+  color: var(--mdc-theme-primary);
+}
+
+.mdc-drawer .mdc-list-item--activated {
+  color: var(--mdc-theme-primary);
+}
+
+.mdc-drawer .mdc-list-item--activated .mdc-list-item__graphic {
+  color: var(--mdc-theme-primary);
+}
+
+.mdc-layout-margined {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.mdc-list-item {
+  font-size: 13px;
+}
+
+.mdc-card {
+  padding: 16px;
+  max-width: 912px;
+  height: 100%;
+  margin: 16px auto;
+}
+
+/* MDL Styles */
 .jt-content {
   width:100%;
 }
