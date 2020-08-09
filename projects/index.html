@@ -1,269 +1,469 @@
 <!doctype html>
 <html lang="en">
-  <head>
-  	<title>Tigcal Apps and Projects</title>
+    <head>
+        <title>Tigcal Apps and Projects</title>
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta name="author" content="Jomar Tigcal" />
+        <meta name="description" content="Apps and Personal Projects of Jomar Tigcal" />
+        <meta name="keywords" content="jomar tigcal, jomar c. tigcal, jomar, tigcal, apps and personal projects of jomar tigcal" />
+        <meta name="theme-color" content="#2196F3">
 
-    <meta name="author" content="Jomar Tigcal" />
-	  <meta name="description" content="Apps and Personal Projects of Jomar Tigcal" />
-	  <meta name="keywords" content="jomar tigcal, jomar c. tigcal, jomar, tigcal, personal apps of jomar tigcal, personal projects of jomar tigcal" />
-	  <meta name="theme-color" content="#2196F3">
+        <link rel="shortcut icon" href="../images/jomar-icon.png">
+        <link rel="apple-touch-icon" href="../images/jomar-icon.png">
+        <link rel="icon" sizes="192x192" href="../images/jomar-icon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" />
+        <link href="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="../styles.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://code.getmdl.io/1.1.3/material.blue-green.min.css">
-    <link rel="stylesheet" href="projects.css">
+        <style type="text/css">
+            .card-header {
+                max-width: 912px;
+                margin: auto;
+            }
+            .card__primary-action {
+                display: flex;
+                flex-direction: row;
+            }
+            .card__primary {
+                padding: 1rem;
+            }
+            .card__title {
+                margin: 0;
+            }
+            .mdc-typography--subtitle2 {
+              text-align: justify;
+            }
+            .icon_container {
+                margin: auto 4px;
+            }
+            .icon {
+                width: 80px;
+                height: 80px;
+                margin: 16px;
+                border-radius: 64px;
+                border: solid 1px #2196F3;
+            }
+            .mdc-icon-button {
+                color: var(--mdc-theme-primary);
+            }
+        </style>
 
-    <link rel="shortcut icon" href="../images/jomar-icon.png">
-    <link rel="apple-touch-icon" href="../images/jomar-icon.png">
-    <link rel="icon" sizes="192x192" href="../images/jomar-icon.png">
-
-    <style>
-    .icon {
-      width: 64px;
-      height: 64px;
-      border-radius: 64px;
-      border: solid 1px #2196F3;
-    }
-    .section__text, .mdl-card__supporting-text{
-      text-align: justify;
-    }
-    </style>
-  </head>
-  <body class="projects-layout mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <div class="jt-header mdl-layout__header mdl-layout__header--waterfall toolbar">
-        <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Tigcal Apps and Projects</span>
+        <script src="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.js"></script>
+    </head>
+    <body>
+        <aside class="mdc-drawer mdc-drawer--modal">
+            <div class="mdc-drawer__header">
+                <h3 class="mdc-drawer__title">Tigcal Apps and Projects</h3>
+            </div>
+            <div class="mdc-drawer__content">
+                <nav class="mdc-list">
+                    <a class="mdc-list-item" href="../" aria-current="page">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+                    <span class="mdc-list-item__text">Home</span>
+                    </a>
+                    <a class="mdc-list-item" href="../about.html" aria-current="page">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">info</i>
+                    <span class="mdc-list-item__text">About</span>
+                    </a>
+                    <a class="mdc-list-item mdc-list-item--activated" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">apps</i>
+                    <span class="mdc-list-item__text">Apps and Projects</span>
+                    </a>
+                    <a class="mdc-list-item" href="../talks.html">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">computer</i>
+                    <span class="mdc-list-item__text">Talks and Workshops</span>
+                    </a>
+                    <a class="mdc-list-item" href="../runs.html">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">directions_run</i>
+                    <span class="mdc-list-item__text">Runs</span>
+                    </a>
+                    <a class="mdc-list-item" href="../contact.html">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">contact_support</i>
+                    <span class="mdc-list-item__text">Contact</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+        <div class="mdc-drawer-scrim"></div>
+        <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <a href="#" class="material-icons mdc-top-app-bar__navigation-icon" id="burger-menu">menu</a>
+                    <span class="mdc-top-app-bar__title">Tigcal Apps and Projects</span>
+                </section>
+            </div>
+        </header>
+        <div class="mdc-top-app-bar--fixed-adjust" id="main-content">
+            <div class="card-header">
+                <h2 class="mdc-typography mdc-typography--headline6">Android Applications</h2>
+                <h3 class="mdc-typography mdc-typography--subtitle2">Personal Android (and Android Wear) applications developed by Jomar Tigcal. Most of these have been published on <a href="https://play.google.com/store/apps/dev?id=5038784345581775968">Google Play Store</a>.</h3>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/X6Yu3O9QvtkYRztj9m7aOagzJrDlI2llO1NaSmPo0lfeurp_iERg6iDXsMG-iJ4jXjzu=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Sweldong Pinoy</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://play.google.com/store/apps/details?id=com.tigcal.salarycalculator">Sweldong Pinoy</a> is an Android app for Filipinos that allows them to compute their gross and net pays, withholding taxes, and contributions to SSS/GSIS, Philhealth and PAG-IBIG.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.tigcal.salarycalculator" class="mdc-button mdc-card__action mdc-card__action--button">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://raw.githubusercontent.com/jomartigcal/tigcal-apps-android-app/master/art/ic_launcher-web.png" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Tigcal Apps and Projects</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://github.com/jomartigcal/tigcal-apps-android-app">Tigcal Apps and Projects</a> is an app that showcases the apps and projects created by Jomar.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://github.com/jomartigcal/tigcal-apps-android-app" class="mdc-button mdc-card__action mdc-card__action--button">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/2WPoDmc4JIWydq6dyBFTMijVdTQfHIuZBluqgenSLAQD-BDzO8S-beaFBSTNSXgzVIg=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Pinoy Jokes</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://play.google.com/store/apps/details?id=com.tigcal.pinoyjokes">Pinoy Jokes</a> is an Android app that will allow users to view and share Filipino Jokes.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.tigcal.pinoyjokes" class="mdc-button mdc-card__action mdc-card__action--button">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/6vkwkzwVBFIdHUQ1G6mVYg__r40feEK8iDbqS_uYHwPL56LnRkCcncD254TwXF-ePYJq=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">GDG Watch Face</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://play.google.com/store/apps/details?id=org.gdgph.watchface">GDG Watch Face</a> is an Android Wear Watch Face which features an analog clock and a digital display. You can customize the watch face by showing/hiding the date and by changing the colors of the hands (hour, minute, second) and hour markers.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=org.gdgph.watchface" class="mdc-button mdc-card__action mdc-card__action--button">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/SK5lx-X09TLigJcqNqIMkETiTnBEthIjLBWCElwWs4-EVpFwb9424ySpw3ePe8Rk4w=w170-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Help Me</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://github.com/jomartigcal/help-me-android-app">Help Me</a> is an Android and Android Wear emergency button app that allows you to send an SMS to your specified contact person with a click of a button. It won second place in Accenture Technology Talks &amp; Hackathon 2015.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://github.com/jomartigcal/help-me-android-app" class="mdc-button mdc-card__action mdc-card__action--button">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/snMMch4rv6KCLmFm7yu96FnnXoCHLafC-DqubDkDE1jHJ1A0mRonGCFkUACsSCeo3oip=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">GDG Philippines</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2">Get the latest events, and other updates about GDG Philippines using the <a href="https://play.google.com/store/apps/details?id=org.gtugphilippines.android">GDG Philippines</a> Android app.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=org.gtugphilippines.android" class="mdc-button mdc-card__action mdc-card__action--button">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/t07ZiswP34JqbcSMs1jNOZneHl0--pHu1cxdigJFlx_H1WU81GbdIDOLhSfOXZHPOg=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Boto Ko</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://play.google.com/store/apps/details?id=com.tigcal.botoko">Boto Ko</a> (My Vote) is an Android application for Philippine elections where you can list, update, and share the candidates you want to vote for.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.tigcal.botoko" class="mdc-button mdc-card__action mdc-card__action--button">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/qyArYbzPtGQASt5LiEidcGBJ1tgI-i8ySH2UrVmiGfYKOf2_RD8gZT5q3VQuaXO-6TI=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Budget Pinoy</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://play.google.com/store/apps/details?id=com.sweldongpinoy.budget">Budget Pinoy</a> is an Android app for Filipinos in finding out how much their asking salary should be based on their budget.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.sweldongpinoy.budget" class="mdc-button mdc-card__action mdc-card__action--button">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/2B-C3isTjXvTj2chgy-Oty-z9_3KAAhc9xvL9oKaKbXv6Jz2Bk1BVZnNF-3UOxTzurFC=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Thirteenth Month</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://play.google.com/store/apps/details?id=com.sweldongpinoy.thirteenthmonth">Thirteenth Month</a> is an Android app for Filipinos in computing their 13th-month pays</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.sweldongpinoy.thirteenthmonth" class="mdc-button mdc-card__action mdc-card__action--button">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div><img src="https://lh3.googleusercontent.com/tLehepNuIzVQEX8Zmnij2P2-fXTqkvMRN5x85AIKWzTO7wuLBT_HoV3i2GWtMdu59ZA=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">PHostpaid</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://play.google.com/store/apps/details?id=com.tigcal.postpaid">PHostpaid</a> is a utility Android app for postpaid mobile phone services in the Philippines.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.tigcal.postpaid" class="mdc-button mdc-card__action mdc-card__action--button">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div><img src="https://lh3.googleusercontent.com/-77rM5XhsaeakErtT4sgoF3vxZaVB7poOM_E3k4FrMnqzHwS2PsC5Hctpgm4h_OWVlI=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Tigcal Utilities</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://play.google.com/apps/testing/com.tigcal.utils">Tigcal Utilities</a> is a collection of utility mini-apps, which includes includes Battery and Flashlight.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://play.google.com/apps/testing/com.tigcal.utils" class="mdc-button mdc-card__action mdc-card__action--button">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div><img src="https://lh3.googleusercontent.com/4IDjJpA8Z33G_8oXHK-Pt44vKq9GeZWvq-8IggFItFwjAx0rhE6y27jal7qgL8JXY8M=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">You and Me</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://play.google.com/store/apps/details?id=com.tigcal.youandme">You and Me</a> is the app for you and your special someone. You can use the app to check your photos with your special someone.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://play.google.com/store/apps/details?id=com.tigcal.youandme" class="mdc-button mdc-card__action mdc-card__action--button">Download</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-header">
+                <h2 class="mdc-typography mdc-typography--headline6">Google Assistant Apps</h2>
+                <h3 class="mdc-typography mdc-typography--subtitle2">Applications for Google Assistant developed by Jomar Tigcal</h3>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/jIQ9s_itVhWuxYfOehzEz-5HogDK6lJNb01lRv5qWnEcLxsT7GKScIAEm20tj4crDsF1xFB9Wh-t" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Budget Penny</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://assistant.google.com/services/a/id/386ffed76114e24f">Budget Penny</a> is your budget assistant that's ready to help in managing your finances. Simply tell her your monthly budget and update her of your expenses as often as you like. Moreover, you can ask her how much is your remaining balance or whether you still have budget.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-icons">
+                        <a href="https://assistant.google.com/services/a/id/386ffed76114e24f" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/6vkwkzwVBFIdHUQ1G6mVYg__r40feEK8iDbqS_uYHwPL56LnRkCcncD254TwXF-ePYJq=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">GDG Philippines</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://assistant.google.com/services/a/id/631a617c588e09c9/">GDG Philippines</a> is a Google Assistant App for the Google Developers Group (GDG) Philippines community. You can ask it about the upcoming events and more information about GDG Philippines.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-icons">
+                        <a href="https://assistant.google.com/services/a/id/631a617c588e09c9" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-header">
+                <h2 class="mdc-typography mdc-typography--headline6">Chrome Extensions</h2>
+                <h3 class="mdc-typography mdc-typography--subtitle2">Google Chrome extensions developed by Jomar Tigcal have been published on <a href="https://chrome.google.com/webstore/search/jomar%20tigcal">Google Chrome Web Store</a>.</h3>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/ah7fn-z9bUFmtzh-EEEhjJcWGN6EeQZ8rzB23JwOXNITJWqbkVx6P9G4jqBfwi3xd_dorpEO=s52-h52-e365-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Android Gradle Extension</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://chrome.google.com/webstore/detail/android-gradle-extension/fhpkfgflphcjlacgolciajdkfodapmcn">Android Gradle Extension</a> is a Chrome extension that adds the Gradle dependency to use for Android API class reference pages.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-icons">
+                        <a href="https://chrome.google.com/webstore/detail/android-gradle-extension/fhpkfgflphcjlacgolciajdkfodapmcn" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/snMMch4rv6KCLmFm7yu96FnnXoCHLafC-DqubDkDE1jHJ1A0mRonGCFkUACsSCeo3oip=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">GDG Philippines</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2">See the latest events and get links to GDG Philippines straight from your Google Chrome browser with the <a href="https://chrome.google.com/webstore/detail/gdg-philippines/pbpopomlbomjpbmpfigaogeodiemmjbm">GDG Philippines Chrome Extension</a>.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-icons">
+                        <a href="https://chrome.google.com/webstore/detail/gdg-philippines/pbpopomlbomjpbmpfigaogeodiemmjbm" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/2WPoDmc4JIWydq6dyBFTMijVdTQfHIuZBluqgenSLAQD-BDzO8S-beaFBSTNSXgzVIg=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Pinoy Jokes</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2">Need a good laugh? Enjoy Pinoy Jokes right from your browser with the <a href="https://chrome.google.com/webstore/detail/pinoy-jokes-chrome-extens/olpaccmgjefjnmojjmhkobjgmofpogai">Pinoy Jokes Chrome Extension</a>.<br />&nbsp;</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-icons">
+                        <a href="https://chrome.google.com/webstore/detail/pinoy-jokes-chrome-extens/olpaccmgjefjnmojjmhkobjgmofpogai" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-header">
+                <h2 class="mdc-typography mdc-typography--headline6">Web Apps</h2>
+                <h3 class="mdc-typography mdc-typography--subtitle2">Web applications developed by Jomar Tigcal</h3>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/X6Yu3O9QvtkYRztj9m7aOagzJrDlI2llO1NaSmPo0lfeurp_iERg6iDXsMG-iJ4jXjzu=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Sweldong Pinoy</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://www.sweldongpinoy.com">Sweldong Pinoy</a> is a salary calculator for Filipinos in computing their gross and net pays, withholding taxes, and contributions to SSS/GSIS, Philhealth and PAG-IBIG.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-icons">
+                        <a href="https://www.sweldongpinoy.com" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/qyArYbzPtGQASt5LiEidcGBJ1tgI-i8ySH2UrVmiGfYKOf2_RD8gZT5q3VQuaXO-6TI=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Budget Pinoy</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://www.budgetpinoy.com">Budget Pinoy</a> is a tool for Filipinos in finding out how much their asking salary should be based on their budget.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-icons">
+                        <a href="https://www.budgetpinoy.com" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="icon_container"><img src="https://lh3.googleusercontent.com/2B-C3isTjXvTj2chgy-Oty-z9_3KAAhc9xvL9oKaKbXv6Jz2Bk1BVZnNF-3UOxTzurFC=s360-rw" class="icon" />
+                    </div>
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Thirteenth Month</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2"><a href="https://13thmonth.sweldongpinoy.com">Thirteenth Month</a> is a tool for Filipinos in computing their 13th-month pays</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-icons">
+                        <a href="https://13thmonth.sweldongpinoy.com" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                    </div>
+                </div>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Events Check-in App</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2">A tool for checking in participants to an event based on a registration sheet. The app also includes a raffle page which can draw names from the list of checked in participants. This was originally developed for major events of GDG Philippines but it has been used in others' event as well. You can <a href="contact.html">send a message</a> if you are interested about this project.</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="../contact.html" class="mdc-button mdc-card__action mdc-card__action--button">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-header">
+                <h2 class="mdc-typography mdc-typography--headline6">Others</h2>
+            </div>
+            <div class="mdc-card mdc-card--outlined">
+                <div class="card__primary-action">
+                    <div class="card__primary">
+                        <h2 class="card__title mdc-typography mdc-typography--headline6">Your App</h2>
+                        <h3 class="mdc-typography mdc-typography--subtitle2">Looking for an Android developer or consultant to help you develop your app? You can <a href="../contact.html">contact me</a>!</h3>
+                    </div>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="../contact.html" class="mdc-button mdc-card__action mdc-card__action--button">Contact Me</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
         </div>
-      </div>
 
-      <div class="jt-drawer mdl-layout__drawer">
-        <div class="mdl-layout-title">
-          <div class="thumbnail"></div>
-          Jomar Tigcal
-        </div>
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="../"><i class="material-icons drawer-icon">home</i>Home</a>
-          <a class="mdl-navigation__link" href="../about.html"><i class="material-icons drawer-icon">info</i> About</a>
-          <a class="mdl-navigation__link" href="#"><i class="material-icons drawer-icon">apps</i> Apps and Projects</a>
-          <a class="mdl-navigation__link" href="../talks.html"><i class="material-icons drawer-icon">computer</i> Talks/Workshops</a>
-          <a class="mdl-navigation__link" href="../runs.html"><i class="material-icons drawer-icon">directions_run</i> Runs</a>
-          <a class="mdl-navigation__link" href="../contact.html"><i class="material-icons drawer-icon">contact_support</i> Contact</a>
-        </nav>
-      </div>
+        <script type="text/javascript">
+            const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+            const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+            topAppBar.setScrollTarget(document.getElementById('main-content'));
+            topAppBar.listen('MDCTopAppBar:nav', () => {
+              drawer.open = !drawer.open;
+            });
+        </script>
 
-      <div class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview">
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Android Applications</h4>
-                <div class="mdl-cell mdl-cell--12-col">Personal Android (and Android Wear) applications developed by Jomar Tigcal. Most of these have been published on <a href="https://play.google.com/store/apps/dev?id=5038784345581775968">Google Play Store</a>.<br /><br /></div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/X6Yu3O9QvtkYRztj9m7aOagzJrDlI2llO1NaSmPo0lfeurp_iERg6iDXsMG-iJ4jXjzu=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Sweldong Pinoy</h5>
-                  <a href="https://play.google.com/store/apps/details?id=com.tigcal.salarycalculator">Sweldong Pinoy</a> is an Android app for Filipinos that allows them to compute their gross and net pays, withholding taxes, and contributions to SSS/GSIS, Philhealth and PAG-IBIG.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://raw.githubusercontent.com/jomartigcal/tigcal-apps-android-app/master/art/ic_launcher-web.png" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Tigcal Apps and Projects</h5>
-                  <a href="https://github.com/jomartigcal/tigcal-apps-android-app">Tigcal Apps and Projects</a> is an app that showcases the apps and projects created by Jomar.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/2WPoDmc4JIWydq6dyBFTMijVdTQfHIuZBluqgenSLAQD-BDzO8S-beaFBSTNSXgzVIg=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Pinoy Jokes</h5>
-                  <a href="https://play.google.com/store/apps/details?id=com.tigcal.pinoyjokes">Pinoy Jokes</a> is an Android app that will allow users to view and share Filipino Jokes.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/6vkwkzwVBFIdHUQ1G6mVYg__r40feEK8iDbqS_uYHwPL56LnRkCcncD254TwXF-ePYJq=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>GDG Watch Face </h5>
-                  <a href="https://play.google.com/store/apps/details?id=org.gdgph.watchface">GDG Watch Face </a> is an Android Wear Watch Face which features an analog clock and a digital display. You can customize the watch face by showing/hiding the date and by changing the colors of the hands (hour, minute, second) and hour markers.<br /><br />
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/SK5lx-X09TLigJcqNqIMkETiTnBEthIjLBWCElwWs4-EVpFwb9424ySpw3ePe8Rk4w=w170-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Help Me </h5>
-                  <a href="https://github.com/jomartigcal/help-me-android-app">Help Me</a> is an Android and Android Wear emergency button app that allows you to send an SMS to your specified contact person with a click of a button. It won second place in Accenture Technology Talks &amp; Hackathon 2015.<br /><br />
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/snMMch4rv6KCLmFm7yu96FnnXoCHLafC-DqubDkDE1jHJ1A0mRonGCFkUACsSCeo3oip=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>GDG Philippines</h5>
-                  Get the latest posts, events, and other updates about GDG Philippines using the <a href="https://play.google.com/store/apps/details?id=org.gtugphilippines.android">official Android app</a>.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/t07ZiswP34JqbcSMs1jNOZneHl0--pHu1cxdigJFlx_H1WU81GbdIDOLhSfOXZHPOg=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Boto Ko </h5>
-                  <a href="https://play.google.com/store/apps/details?id=com.tigcal.botoko">Boto Ko</a> (My Vote) is an Android application for Philippine elections where you can list, update, and share the candidates you want to vote for.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/2B-C3isTjXvTj2chgy-Oty-z9_3KAAhc9xvL9oKaKbXv6Jz2Bk1BVZnNF-3UOxTzurFC=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Thirteenth Month</h5>
-                  <a href="https://play.google.com/store/apps/details?id=com.sweldongpinoy.thirteenthmonth">Thirteenth Month</a> is an Android app for Filipinos in computing their 13th-month pays
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/tLehepNuIzVQEX8Zmnij2P2-fXTqkvMRN5x85AIKWzTO7wuLBT_HoV3i2GWtMdu59ZA=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>PHostpaid</h5>
-                  <a href="https://play.google.com/store/apps/details?id=com.tigcal.postpaid">PHostpaid</a> is a utility Android app for postpaid mobile phone services in the Philippines.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/qyArYbzPtGQASt5LiEidcGBJ1tgI-i8ySH2UrVmiGfYKOf2_RD8gZT5q3VQuaXO-6TI=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Budget Pinoy</h5>
-                  <a href="https://play.google.com/store/apps/details?id=com.sweldongpinoy.budget">Budget Pinoy</a> is a tool for Filipinos in finding out how much their asking salary should be based on their budget.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/-77rM5XhsaeakErtT4sgoF3vxZaVB7poOM_E3k4FrMnqzHwS2PsC5Hctpgm4h_OWVlI=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Tigcal Utilities</h5>
-                  <a href="https://play.google.com/apps/testing/com.tigcal.utils">Tigcal Utilities</a> is a collection of utility mini-apps, which includes includes Battery and Flashlight.
-                </div>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/4IDjJpA8Z33G_8oXHK-Pt44vKq9GeZWvq-8IggFItFwjAx0rhE6y27jal7qgL8JXY8M=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>You and Me</h5>
-                  <a href="https://play.google.com/store/apps/details?id=com.tigcal.youandme">You and Me</a> is the app for you and your special someone. You can use the app to check your photos with your special someone.
-                </div>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://play.google.com/store/apps/dev?id=5038784345581775968" class="mdl-button">View Android Apps</a>
-              </div>
-            </div>
-          </section>
-
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Google Assistant Apps</h4>
-                <div class="mdl-cell mdl-cell--12-col">Applications for Google Assistant developed by Jomar Tigcal<br /><br /></div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/jIQ9s_itVhWuxYfOehzEz-5HogDK6lJNb01lRv5qWnEcLxsT7GKScIAEm20tj4crDsF1xFB9Wh-t" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Budget Penny</h5>
-                  <a href="https://assistant.google.com/services/a/id/386ffed76114e24f">Budget Penny</a> is your budget assistant that's ready to help in managing your finances. Simply tell her your monthly budget and update her of your expenses as often as you like. Moreover, you can ask her how much is your remaining balance or whether you still have budget.<br /><br />
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/6vkwkzwVBFIdHUQ1G6mVYg__r40feEK8iDbqS_uYHwPL56LnRkCcncD254TwXF-ePYJq=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>GDG Philippines</h5>
-                  <a href="https://assistant.google.com/services/a/id/631a617c588e09c9/">GDG Philippines</a>: Official Google Assistant App for the Google Developers Group (GDG) Philippines community. You can ask it about the upcoming events and more information about GDG Philippines.
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text mdl-grid mdl-grid--no-spacing">
-                <h4 class="mdl-cell mdl-cell--12-col">Chrome Extensions</h4>
-                <div class="mdl-cell mdl-cell--12-col">Google Chrome extensions developed by Jomar Tigcal have been published on <a href="https://chrome.google.com/webstore">Google Chrome Web Store</a>.<br /><br /></div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/ah7fn-z9bUFmtzh-EEEhjJcWGN6EeQZ8rzB23JwOXNITJWqbkVx6P9G4jqBfwi3xd_dorpEO=s52-h52-e365-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Android Gradle Extension</h5>
-                  <a href="https://chrome.google.com/webstore/detail/android-gradle-extension/fhpkfgflphcjlacgolciajdkfodapmcn">Android Gradle Extension</a> is a Chrome extension that adds the Gradle dependency to use for Android API class reference pages.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/2WPoDmc4JIWydq6dyBFTMijVdTQfHIuZBluqgenSLAQD-BDzO8S-beaFBSTNSXgzVIg=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>Pinoy Jokes</h5>
-                  Need a good laugh? Enjoy Pinoy Jokes right from your browser with the <a href="https://chrome.google.com/webstore/detail/pinoy-jokes-chrome-extens/olpaccmgjefjnmojjmhkobjgmofpogai">Pinoy Jokes Chrome Extension</a>.
-                </div>
-                <div class="section__circle-container mdl-cell mdl-cell--2-col mdl-cell--1-col-phone">
-                  <div class="section__circle-container__circle"><img src="https://lh3.googleusercontent.com/snMMch4rv6KCLmFm7yu96FnnXoCHLafC-DqubDkDE1jHJ1A0mRonGCFkUACsSCeo3oip=s360-rw" class="icon" /></div>
-                </div>
-                <div class="section__text mdl-cell mdl-cell--10-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">
-                  <h5>GDG Philippines</h5>
-                  See the latest events and get links to GDG Philippines straight from your Google Chrome browser with the <a href="https://chrome.google.com/webstore/detail/gdg-philippines/pbpopomlbomjpbmpfigaogeodiemmjbm">GDG Philippines Chrome Extension</a>.
-                </div>
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://chrome.google.com/webstore/search/jomar%20tigcal" class="mdl-button">View Chrome Extensions</a>
-              </div>
-            </div>
-          </section>
-
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color-text--white">
-              <img src="https://lh3.googleusercontent.com/X6Yu3O9QvtkYRztj9m7aOagzJrDlI2llO1NaSmPo0lfeurp_iERg6iDXsMG-iJ4jXjzu=s360-rw" style="width:100%;" />
-            </header>
-            <div class="mdl-card mdl-cell mdl-cell--9-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone">
-              <div class="mdl-card__supporting-text">
-                <h4>Sweldong Pinoy</h4>
-                Sweldong Pinoy is a salary calculator for Filipinos in computing their gross and net pays, withholding taxes, and contributions to SSS/GSIS, Philhealth and PAG-IBIG.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="https://www.sweldongpinoy.com" class="mdl-button">Learn more</a>
-              </div>
-            </div>
-          </section>
-
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Events Check-in App</h4>
-                A tool for checking in participants to an event based on a registration sheet. The app also includes a raffle page which can draw names from the list of checked in participants. This was originally developed for major events of GDG Philippines but it has been used in others' event as well. You can <a href="contact.html">send a message</a> if you are interested about this project.
-              </div>
-              <div class="mdl-card__actions">
-                <a href="../contact.html" class="mdl-button">Learn more</a>
-              </div>
-            </div>
-          </section>
-
-
-          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
-            <div class="mdl-card mdl-cell mdl-cell--12-col">
-              <div class="mdl-card__supporting-text">
-                <h4>Your App</h4>
-                Looking for an Android developer or consultant to help you develop your app? You can <a href="../contact.html">contact me</a>!
-              </div>
-              <div class="mdl-card__actions">
-                <a href="../contact.html" class="mdl-button">Send a message</a>
-              </div>
-            </div>
-          </section>          
-        </div>
-      </div>
-    </div>
-    
-    <script src="https://code.getmdl.io/1.1.3/material.min.js"></script>
-
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-      ga('create', 'UA-20395667-14', 'auto');
-      ga('send', 'pageview');
-  </script>
-  </body>
+            ga('create', 'UA-20395667-14', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
 </html>
