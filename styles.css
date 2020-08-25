@@ -75,3 +75,7 @@ a {
   height: 100%;
   margin: 16px auto;
 }
+
+.mdc-icon-button {
+  color: var(--mdc-theme-primary);
+}
