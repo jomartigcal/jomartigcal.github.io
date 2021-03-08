@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Books</title>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+        <meta name="author" content="Jomar Tigcal" />
+        <meta name="description" content="Books of Jomar Tigcal" />
+        <meta name="keywords" content="jomar tigcal, jomar c. tigcal, jomar, tigcal, books of jomar tigcal" />
+        <meta name="theme-color" content="#2196F3">
+
+        <link rel="shortcut icon" href="images/jomar-icon.png">
+        <link rel="apple-touch-icon" href="images/jomar-icon.png">
+        <link rel="icon" sizes="192x192" href="images/jomar-icon.png">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" />
+        <link href="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.css" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="styles.css">
+
+        <script src="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.js"></script>  
+    </head>
+    <body>
+        <aside class="mdc-drawer mdc-drawer--modal">
+            <div class="mdc-drawer__header">
+                <h3 class="mdc-drawer__title">Jomar Tigcal</h3>
+            </div>
+            <div class="mdc-drawer__content">
+                <nav class="mdc-list">
+                    <a class="mdc-list-item" href="/" aria-current="page">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
+                    <span class="mdc-list-item__text">Home</span>
+                    </a>
+                    <a class="mdc-list-item" href="about.html" aria-current="page">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">info</i>
+                    <span class="mdc-list-item__text">About</span>
+                    </a>
+                    <a class="mdc-list-item" href="projects/">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">apps</i>
+                    <span class="mdc-list-item__text">Apps and Projects</span>
+                    </a>
+                    <a class="mdc-list-item mdc-list-item--activated" href="#">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">menu_book</i>
+                    <span class="mdc-list-item__text">Books</span>
+                    </a>
+                    <a class="mdc-list-item" href="talks.html">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">computer</i>
+                    <span class="mdc-list-item__text">Talks and Workshops</span>
+                    </a>
+                    <a class="mdc-list-item" href="runs.html">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">directions_run</i>
+                    <span class="mdc-list-item__text">Runs</span>
+                    </a>
+                    <a class="mdc-list-item" href="contact.html">
+                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">contact_support</i>
+                    <span class="mdc-list-item__text">Contact</span>
+                    </a>
+                </nav>
+            </div>
+        </aside>
+        <div class="mdc-drawer-scrim"></div>
+        <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
+            <div class="mdc-top-app-bar__row">
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                    <a href="#" class="material-icons mdc-top-app-bar__navigation-icon" id="burger-menu">menu</a>
+                    <span class="mdc-top-app-bar__title">Books</span>
+                </section>
+            </div>
+        </header>
+        <div class="mdc-top-app-bar--fixed-adjust" id="main-content">
+            <div class="mdc-card mdc-card--outlined">
+                <div>
+                    <h2 class="mdc-typography mdc-typography--headline6">How to Build Android Apps with Kotlin</h2>
+                    <p>How to Build Android Apps with Kotlin: A hands-on guide to developing, testing, and publishing your first apps with Android</p>
+                    <div style="text-align: center;font-style:italic"><img src="https://1.bp.blogspot.com/-8jwybnJVBTk/YEHZ_PhPvoI/AAAAAAAA-FQ/kq46LVAZDdk8AaTU4k39EcTvgSONQ9ZaQCPcBGAYYCw/s0/HowtoBuildAndroidAppswithKotlin.jpg" style="border: 0px; margin: auto;width:35%;" /><br /><br /></div>
+                    <p>This book starts with the fundamentals of app development, enabling you to utilize Android Studio and Kotlin to get started building Android projects. You'll learn how to create apps and run them on virtual devices through guided exercises. Progressing through the chapters, you'll delve into Android’s RecyclerView to make the most of lists, images, and maps, and see how to fetch data from a web service.</p>
+                    <p>Moving ahead, you'll get to grips with testing, learn how to keep your architecture clean, understand how to persist data, and gain basic knowledge of the dependency injection pattern. Finally, you'll see how to publish your apps on the Google Play store.</p>
+                    <p></p>
+                </div>
+                <div class="mdc-card__actions">
+                    <div class="mdc-card__action-buttons">
+                        <a href="https://www.packtpub.com/product/how-to-build-android-apps-with-kotlin/9781838984113" class="mdc-button mdc-card__action mdc-card__action--button">Buy on Packt</a>
+                        <a href="https://amzn.to/3rlmn4B" class="mdc-button mdc-card__action mdc-card__action--button">Buy on Amazon</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
+            const topAppBar = mdc.topAppBar.MDCTopAppBar.attachTo(document.getElementById('app-bar'));
+            topAppBar.setScrollTarget(document.getElementById('main-content'));
+            topAppBar.listen('MDCTopAppBar:nav', () => {
+              drawer.open = !drawer.open;
+            });
+
+            const buttonRipple = new mdc.ripple.MDCRipple(document.querySelector('.mdc-button'));
+        </script>
+        <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-20395667-14', 'auto');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
