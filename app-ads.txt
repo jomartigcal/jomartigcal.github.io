@@ -122,6 +122,7 @@ startapp.com, smt, RESELLER
 xad.com, 241, RESELLER, 81cbf0a75a5e0e9a
 indexexchange.com, 189149, RESELLER, 50b1c356f2c5c8fc
 media.net, 8CURU230D, DIRECT
+media.net, 8CUBW2CEG, DIRECT
 ironsrc.com, 335022, DIRECT, 79929e88b2ba73bc
 appnexus.com, 2480, RESELLER, f5ab79cb980f11d1
 improvedigital.com, 1114, RESELLER
