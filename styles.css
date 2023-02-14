@@ -19,6 +19,10 @@ a {
   color: #00BCD4;
 }
 
+footer {
+  text-align: center;
+}
+
 ::-moz-selection {
   background-color: #6ab344;
   color: #fff;

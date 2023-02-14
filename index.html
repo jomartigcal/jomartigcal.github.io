@@ -20,6 +20,7 @@
         <link rel="stylesheet" href="styles.css">
 
         <style>
+            html, body { height: 100%;}
             #header {
 	            background:#2196F3;
 	            height:144px
@@ -29,6 +30,7 @@
 	            position:absolute;
 	            margin: 0px;
 	            width:100%;
+                height: 100%;
             }
             .photo {
 	            width: 144px;
@@ -50,6 +52,10 @@
 	            margin:4px;
 	            width:32px;
                 border-radius: 16px;
+            }
+            #main-content > footer {
+                position: sticky;
+                top: 90vh;
             }
         </style>
 
@@ -122,6 +128,11 @@
                 <a href="https://www.youtube.com/user/jomartigcal"><img class="icon" src="images/youtube-logo.png" alt="View my YouTube channel" title="View my YouTube channel" /></a>
                 <a href="mailto:jomar@tigcal.com"><img class="icon" src="images/email.png" alt="Send me an email" title="Email me" /></a>
             </div>
+            <footer>
+                <hr />
+                Home | <a href="about.html">About</a> | <a href="projects/">Apps and Projects</a> | <a href="books.html">Books</a> | <a href="talks.html">Talks and Workshops</a> | <a href="runs.html">Runs</a> | <a href="contact.html">Contact</a>
+                <br /><br />
+            </footer>
         </div>
         <script type="text/javascript">
             const drawer = mdc.drawer.MDCDrawer.attachTo(document.querySelector('.mdc-drawer'));
