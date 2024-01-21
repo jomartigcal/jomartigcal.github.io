@@ -56,11 +56,11 @@ footer {
   color: var(--mdc-theme-primary);
 }
 
-.mdc-drawer .mdc-list-item--activated {
+.mdc-drawer .mdc-deprecated-list-item--activated {
   color: var(--mdc-theme-primary);
 }
 
-.mdc-drawer .mdc-list-item--activated .mdc-list-item__graphic {
+.mdc-drawer .mdc-deprecated-list-item--activated .mdc-deprecated-list-item__graphic {
   color: var(--mdc-theme-primary);
 }
 
@@ -69,7 +69,7 @@ footer {
   margin-right: 10%;
 }
 
-.mdc-list-item {
+.mdc-deprecated-list-item {
   font-size: 13px;
 }
 

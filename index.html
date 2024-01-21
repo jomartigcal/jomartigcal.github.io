@@ -16,64 +16,56 @@
         <link rel="apple-touch-icon" href="images/jomar-icon.png">
         <link rel="icon" sizes="192x192" href="images/jomar-icon.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" />
-        <link href="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.css" rel="stylesheet" />
+        <link href="https://unpkg.com/material-components-web@14.0.0/dist/material-components-web.min.css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="styles.css">
 
         <style>
             @media (prefers-color-scheme: dark) {
-              body {
+              body, .mdc-drawer, .mdc-drawer .item, .mdc-drawer .item-graphic {
                 background-color: #212121;
                 color: #FFFFFF;
-                --background: #212121;
-                --foreground: #FFFFFF;
               }
               .icon-switch {
                 filter: invert(100%);
               }
             }
             @media (prefers-color-scheme: light) {
-              body {
+              body, .mdc-drawer, .mdc-drawer .item, .mdc-drawer .item-graphic {
                 background-color: #FFFFFF;
                 color: #212121;
-                --background: #FFFFFF;
-                --foreground: #212121;
               }
-            }
-            .mdc-drawer, .mdc-drawer .item, .mdc-drawer .item-graphic {
-                background-color: var(--background);
-                color: var(--foreground);
-            }
+            }          
             #header {
-	            background:#2196F3;
-	            height:144px
+                background:#2196F3;
+                height:144px
             }
             .jt-content {
-	            text-align: center;
-	            position:absolute;
-	            margin: 0px;
-	            width:100%;
+                text-align: center;
+                position:absolute;
+                margin: 0px;
+                width:100%;
                 height: 100%;
             }
             .photo {
-	            width: 144px;
-	            height: 144px;
-	            display: block;
-	            margin-left: auto;
-	            margin-right: auto;
-	            margin-top: -75px;
-	            border-radius: 75px;
-	            -webkit-border-radius: 75px;
-	            -moz-border-radius: 75px;
-	            background: url(images/jomar-icon.png) no-repeat;
-	            background-size: cover;
-	            box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	            -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	            -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+                width: 144px;
+                height: 144px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: -75px;
+                border-radius: 75px;
+                -webkit-border-radius: 75px;
+                -moz-border-radius: 75px;
+                background: url(images/jomar-icon.png) no-repeat;
+                background-size: cover;
+                box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+                -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+                -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
             }
             .icon {
-	            margin:4px;
-	            width:32px;
+                margin:4px;
+                width:32px;
                 border-radius: 16px;
             }
             #main-content > footer {
@@ -82,7 +74,7 @@
             }
         </style>
 
-        <script src="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.js"></script>
+        <script src="https://unpkg.com/material-components-web@14.0.0/dist/material-components-web.min.js"></script>
         <script data-ad-client="ca-pub-1476112416134857" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </head>
     <body>
@@ -91,34 +83,34 @@
                 <h3 class="mdc-drawer__title">Jomar Tigcal</h3>
             </div>
             <div class="mdc-drawer__content">
-                <nav class="mdc-list">
-                    <a class="mdc-list-item mdc-list-item--activated" href="#" aria-current="page">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
-                    <span class="mdc-list-item__text">Home</span>
+                <nav class="mdc-deprecated-list">
+                    <a class="mdc-deprecated-list-item mdc-deprecated-list-item--activated" href="#" aria-current="page">
+                    <i class="material-icons mdc-deprecated-list-item__graphic" aria-hidden="true">home</i>
+                    <span class="mdc-deprecated-list-item__text">Home</span>
                     </a>
-                    <a class="mdc-list-item" href="about.html" aria-current="page">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">info</i>
-                    <span class="mdc-list-item__text">About</span>
+                    <a class="mdc-deprecated-list-item item" href="about.html" aria-current="page">
+                    <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">info</i>
+                    <span class="mdc-deprecated-list-item__text">About</span>
                     </a>
-                    <a class="mdc-list-item" href="projects/">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">apps</i>
-                    <span class="mdc-list-item__text">Apps and Projects</span>
+                    <a class="mdc-deprecated-list-item item" href="projects/">
+                    <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">apps</i>
+                    <span class="mdc-deprecated-list-item__text">Apps and Projects</span>
                     </a>
-                    <a class="mdc-list-item" href="books.html">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">menu_book</i>
-                    <span class="mdc-list-item__text">Books</span>
+                    <a class="mdc-deprecated-list-item item" href="books.html">
+                    <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">menu_book</i>
+                    <span class="mdc-deprecated-list-item__text">Books</span>
                     </a>
-                    <a class="mdc-list-item" href="talks.html">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">computer</i>
-                    <span class="mdc-list-item__text">Talks and Workshops</span>
+                    <a class="mdc-deprecated-list-item item" href="talks.html">
+                    <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">computer</i>
+                    <span class="mdc-deprecated-list-item__text">Talks and Workshops</span>
                     </a>
-                    <a class="mdc-list-item" href="runs.html">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">directions_run</i>
-                    <span class="mdc-list-item__text">Runs</span>
+                    <a class="mdc-deprecated-list-item item" href="runs.html">
+                    <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">directions_run</i>
+                    <span class="mdc-deprecated-list-item__text">Runs</span>
                     </a>
-                    <a class="mdc-list-item" href="contact.html">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">contact_support</i>
-                    <span class="mdc-list-item__text">Contact</span>
+                    <a class="mdc-deprecated-list-item item" href="contact.html">
+                    <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">contact_support</i>
+                    <span class="mdc-deprecated-list-item__text">Contact</span>
                     </a>
                 </nav>
             </div>
