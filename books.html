@@ -31,11 +31,11 @@
         <link rel="apple-touch-icon" href="images/jomar-icon.png">
         <link rel="icon" sizes="192x192" href="images/jomar-icon.png">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" />
-        <link href="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.css" rel="stylesheet" />
+        <link href="https://unpkg.com/material-components-web@14.0.0/dist/material-components-web.min.css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="styles.css">
 
-        <script src="https://unpkg.com/material-components-web@3.2.0/dist/material-components-web.min.js"></script>  
+        <script src="https://unpkg.com/material-components-web@14.0.0/dist/material-components-web.min.js"></script>  
     </head>
     <body>
         <aside class="mdc-drawer mdc-drawer--modal">
@@ -43,34 +43,41 @@
                 <h3 class="mdc-drawer__title">Jomar Tigcal</h3>
             </div>
             <div class="mdc-drawer__content">
-                <nav class="mdc-list">
-                    <a class="mdc-list-item" href="/" aria-current="page">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">home</i>
-                    <span class="mdc-list-item__text">Home</span>
+                <nav class="mdc-deprecated-list">
+                    <a class="mdc-deprecated-list-item drawer-item" href="/" aria-current="page">
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">home</i>
+                        <span class="mdc-deprecated-list-item__text">Home</span>
                     </a>
-                    <a class="mdc-list-item" href="about.html" aria-current="page">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">info</i>
-                    <span class="mdc-list-item__text">About</span>
+                    <a class="mdc-deprecated-list-item drawer-item" href="about.html" aria-current="page">
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">info</i>
+                        <span class="mdc-deprecated-list-item__text">About</span>
                     </a>
-                    <a class="mdc-list-item" href="projects/">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">apps</i>
-                    <span class="mdc-list-item__text">Apps and Projects</span>
+                    <a class="mdc-deprecated-list-item drawer-item" href="projects/">
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">apps</i>
+                        <span class="mdc-deprecated-list-item__text">Apps and Projects</span>
                     </a>
-                    <a class="mdc-list-item mdc-list-item--activated" href="#">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">menu_book</i>
-                    <span class="mdc-list-item__text">Books</span>
+                    <a class="mdc-deprecated-list-item mdc-deprecated-list-item--activated" href="#">
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">menu_book</i>
+                        <span class="mdc-deprecated-list-item__text">Books</span>
                     </a>
-                    <a class="mdc-list-item" href="talks.html">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">computer</i>
-                    <span class="mdc-list-item__text">Talks and Workshops</span>
+                    <a class="mdc-deprecated-list-item drawer-item" href="talks.html">
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">computer</i>
+                        <span class="mdc-deprecated-list-item__text">Talks and Workshops</span>
                     </a>
-                    <a class="mdc-list-item" href="runs.html">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">directions_run</i>
-                    <span class="mdc-list-item__text">Runs</span>
+                    <a class="mdc-deprecated-list-item drawer-item" href="runs.html">
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">directions_run</i>
+                        <span class="mdc-deprecated-list-item__text">Runs</span>
                     </a>
-                    <a class="mdc-list-item" href="contact.html">
-                    <i class="material-icons mdc-list-item__graphic" aria-hidden="true">contact_support</i>
-                    <span class="mdc-list-item__text">Contact</span>
+                    <a class="mdc-deprecated-list-item drawer-item" href="contact.html">
+                        <span class="mdc-deprecated-list-item__ripple"></span>
+                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">contact_support</i>
+                        <span class="mdc-deprecated-list-item__text">Contact</span>
                     </a>
                 </nav>
             </div>
@@ -89,7 +96,7 @@
                 <div>
                     <h2 class="mdc-typography mdc-typography--headline6">How to Build Android Apps with Kotlin (Second Edition)</h2>
                     <p>How to Build Android Apps with Kotlin: A practical guide to developing, testing, and publishing your first Android apps</p>
-                    <div style="text-align: center;font-style:italic"><img src="images/How to Build Android Apps with Kotlin 2.png" style="border: 0px; margin: auto;width:35%;" /><br /><br /></div>
+                    <div style="text-align: center;font-style:italic"><img src="images/books/How to Build Android Apps with Kotlin 2.png" style="border: 0px; margin: auto;width:35%;" /><br /><br /></div>
                     <p>This book starts with the fundamentals of app development, enabling you to utilize Android Studio and Kotlin to get started with building Android projects. You'll learn how to create apps and run them on virtual devices through guided exercises. Progressing through the chapters, you'll delve into Android’s RecyclerView to make the most of lists, images, and maps, and see how to fetch data from a web service.</p>
                     <p>You'll also get to grips with testing, learn how to keep your architecture clean, understanding how to persist data, and gaining basic knowledge of the dependency injection pattern. Finally, you'll see how to publish your apps on the Google Play store.</p>
                     <p></p>
@@ -105,7 +112,7 @@
                 <div>
                     <h2 class="mdc-typography mdc-typography--headline6">Simplifying Android Development with Coroutines and Flows</h2>
                     <p>Simplifying Android Development with Coroutines and Flows: Learn how to use Kotlin coroutines and the Flow API to handle data streams asynchronously in your Android app</p>
-                    <div style="text-align: center;font-style:italic"><img src="images/Simplifying Android Development with Coroutines and Flows.jpeg" style="border: 0px; margin: auto;width:35%;" /><br /><br /></div>
+                    <div style="text-align: center;font-style:italic"><img src="images/books/Simplifying Android Development with Coroutines and Flows.jpeg" style="border: 0px; margin: auto;width:35%;" /><br /><br /></div>
                     <p>The book begins by showing you how to create and handle Kotlin Coroutines on Android. You'll explore asynchronous programming in Kotlin, and understand how to test Kotlin Coroutines. Next, you'll learn about Kotlin Flows on Android, and have a closer look at using Kotlin Flows by getting to grips with handling Flow cancellations and exceptions and testing the Flows.</p>
                     <p></p>
                 </div>
@@ -120,7 +127,7 @@
                 <div>
                     <h2 class="mdc-typography mdc-typography--headline6">How to Build Android Apps with Kotlin</h2>
                     <p>How to Build Android Apps with Kotlin: A hands-on guide to developing, testing, and publishing your first apps with Android</p>
-                    <div style="text-align: center;font-style:italic"><img src="https://1.bp.blogspot.com/-8jwybnJVBTk/YEHZ_PhPvoI/AAAAAAAA-FQ/kq46LVAZDdk8AaTU4k39EcTvgSONQ9ZaQCPcBGAYYCw/s0/HowtoBuildAndroidAppswithKotlin.jpg" style="border: 0px; margin: auto;width:35%;" /><br /><br /></div>
+                    <div style="text-align: center;font-style:italic"><img src="images/books/How to Build Android Apps with Kotlin 1.jpg" style="border: 0px; margin: auto;width:35%;" /><br /><br /></div>
                     <p>This book starts with the fundamentals of app development, enabling you to utilize Android Studio and Kotlin to get started building Android projects. You'll learn how to create apps and run them on virtual devices through guided exercises. Progressing through the chapters, you'll delve into Android’s RecyclerView to make the most of lists, images, and maps, and see how to fetch data from a web service.</p>
                     <p>Moving ahead, you'll get to grips with testing, learn how to keep your architecture clean, understand how to persist data, and gain basic knowledge of the dependency injection pattern. Finally, you'll see how to publish your apps on the Google Play store.</p>
                     <p></p>
