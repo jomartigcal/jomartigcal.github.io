@@ -8,13 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <meta name="author" content="Jomar Tigcal" />
         <meta name="description" content="GDG Philippines Privacy Policy" />
-        <meta name="keywords" content="jomar tigcal, jomar c. tigcal, jomar, tigcal, personal website of jomar tigcal" />
+        <meta name="keywords" content="jomar tigcal, jomar, tigcal, personal website of jomar tigcal" />
         <meta name="theme-color" content="#2196F3">
+        <meta name=color-scheme content="light dark">
 
         <link rel="shortcut icon" href="https://lh3.googleusercontent.com/snMMch4rv6KCLmFm7yu96FnnXoCHLafC-DqubDkDE1jHJ1A0mRonGCFkUACsSCeo3oip=s360-rw">
         <link rel="apple-touch-icon" href="https://lh3.googleusercontent.com/snMMch4rv6KCLmFm7yu96FnnXoCHLafC-DqubDkDE1jHJ1A0mRonGCFkUACsSCeo3oip=s360-rw">
         <link rel="icon" sizes="192x192" href="https://lh3.googleusercontent.com/snMMch4rv6KCLmFm7yu96FnnXoCHLafC-DqubDkDE1jHJ1A0mRonGCFkUACsSCeo3oip=s360-rw">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link href="https://unpkg.com/material-components-web@14.0.0/dist/material-components-web.min.css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../../styles.css">
@@ -30,12 +31,12 @@
                 <nav class="mdc-deprecated-list">
                     <a class="mdc-deprecated-list-item mdc-deprecated-list-item--activated" href="#" aria-current="page">
                         <span class="mdc-deprecated-list-item__ripple"></span>
-                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">policy</i>
+                        <i class="material-symbols-outlined mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">policy</i>
                         <span class="mdc-deprecated-list-item__text">Privacy Policy</span>
                     </a>
                     <a class="mdc-deprecated-list-item drawer-item" href="terms-and-conditions.html" aria-current="page">
                         <span class="mdc-deprecated-list-item__ripple"></span>
-                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">description</i>
+                        <i class="material-symbols-outlined mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">description</i>
                         <span class="mdc-deprecated-list-item__text">Terms &amp; Conditions</span>
                     </a>
                 </nav>
@@ -45,8 +46,13 @@
         <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
             <div class="mdc-top-app-bar__row">
                 <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                    <a href="#" class="material-icons mdc-top-app-bar__navigation-icon" id="burger-menu">menu</a>
+                    <a href="#" class="material-symbols-outlined mdc-top-app-bar__navigation-icon" id="burger-menu">menu</a>
                     <span class="mdc-top-app-bar__title">GDG Philippines</span>
+                </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <span class="material-symbols-outlined" id="theme-icon">light_mode</span>
+                    </button>
                 </section>
             </div>
         </header>
@@ -119,5 +125,6 @@
             ga('create', 'UA-20395667-14', 'auto');
             ga('send', 'pageview');
         </script>
+        <script src="../../script.js"></script>
     </body>
 </html>

@@ -8,13 +8,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
         <meta name="author" content="Jomar Tigcal" />
         <meta name="description" content="Apps and Personal Projects of Jomar Tigcal" />
-        <meta name="keywords" content="jomar tigcal, jomar c. tigcal, jomar, tigcal, apps and personal projects of jomar tigcal" />
+        <meta name="keywords" content="jomar tigcal, jomar, tigcal, apps and personal projects of jomar tigcal" />
         <meta name="theme-color" content="#2196F3">
+        <meta name=color-scheme content="light dark">
 
         <link rel="shortcut icon" href="https://raw.githubusercontent.com/jomartigcal/tigcal-apps-android-app/master/art/ic_launcher-playstore.png">
         <link rel="apple-touch-icon" href="https://raw.githubusercontent.com/jomartigcal/tigcal-apps-android-app/master/art/ic_launcher-playstore.png">
         <link rel="icon" sizes="192x192" href="https://raw.githubusercontent.com/jomartigcal/tigcal-apps-android-app/master/art/ic_launcher-playstore.png">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons&display=swap" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link href="https://unpkg.com/material-components-web@14.0.0/dist/material-components-web.min.css" rel="stylesheet" />
         <link href='https://fonts.googleapis.com/css?family=Roboto&display=swap' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="../styles.css">
@@ -60,37 +61,37 @@
                 <nav class="mdc-deprecated-list">
                     <a class="mdc-deprecated-list-item drawer-item" href="../" aria-current="page">
                         <span class="mdc-deprecated-list-item__ripple"></span>
-                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">home</i>
+                        <i class="material-symbols-outlined mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">home</i>
                         <span class="mdc-deprecated-list-item__text">Home</span>
                     </a>
                     <a class="mdc-deprecated-list-item drawer-item" href="../about.html" aria-current="page">
                         <span class="mdc-deprecated-list-item__ripple"></span>
-                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">info</i>
+                        <i class="material-symbols-outlined mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">info</i>
                         <span class="mdc-deprecated-list-item__text">About</span>
                     </a>
                     <a class="mdc-deprecated-list-item mdc-deprecated-list-item--activated" href="#">
                         <span class="mdc-deprecated-list-item__ripple"></span>
-                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">apps</i>
+                        <i class="material-symbols-outlined mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">apps</i>
                         <span class="mdc-deprecated-list-item__text">Apps and Projects</span>
                     </a>
                     <a class="mdc-deprecated-list-item drawer-item" href="../books.html">
                         <span class="mdc-deprecated-list-item__ripple"></span>
-                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">menu_book</i>
+                        <i class="material-symbols-outlined mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">menu_book</i>
                         <span class="mdc-deprecated-list-item__text">Books</span>
                     </a>
                     <a class="mdc-deprecated-list-item drawer-item" href="../talks.html">
                         <span class="mdc-deprecated-list-item__ripple"></span>
-                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">computer</i>
+                        <i class="material-symbols-outlined mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">computer</i>
                         <span class="mdc-deprecated-list-item__text">Talks and Workshops</span>
                     </a>
                     <a class="mdc-deprecated-list-item drawer-item" href="../runs.html">
                         <span class="mdc-deprecated-list-item__ripple"></span>
-                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">directions_run</i>
+                        <i class="material-symbols-outlined mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">directions_run</i>
                         <span class="mdc-deprecated-list-item__text">Runs</span>
                     </a>
                     <a class="mdc-deprecated-list-item drawer-item" href="../contact.html">
                         <span class="mdc-deprecated-list-item__ripple"></span>
-                        <i class="material-icons mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">contact_support</i>
+                        <i class="material-symbols-outlined mdc-deprecated-list-item__graphic item-graphic" aria-hidden="true">contact_support</i>
                         <span class="mdc-deprecated-list-item__text">Contact</span>
                     </a>
                 </nav>
@@ -100,15 +101,20 @@
         <header class="mdc-top-app-bar mdc-top-app-bar--fixed" id="app-bar">
             <div class="mdc-top-app-bar__row">
                 <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-                    <a href="#" class="material-icons mdc-top-app-bar__navigation-icon" id="burger-menu">menu</a>
+                    <a href="#" class="material-symbols-outlined mdc-top-app-bar__navigation-icon" id="burger-menu">menu</a>
                     <span class="mdc-top-app-bar__title">Tigcal Apps and Projects</span>
+                </section>
+                <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end">
+                    <button id="theme-toggle" aria-label="Toggle Theme">
+                        <span class="material-symbols-outlined" id="theme-icon">light_mode</span>
+                    </button>
                 </section>
             </div>
         </header>
         <div class="mdc-top-app-bar--fixed-adjust" id="main-content">
             <div class="card-header">
                 <h2 class="mdc-typography mdc-typography--headline6">Android Applications</h2>
-                <h3 class="mdc-typography mdc-typography--subtitle2">Here are the personal Android applications developed by Jomar Tigcal, nost of which have been published on <a href="https://play.google.com/store/apps/dev?id=5038784345581775968">Google Play Store</a>.</h3>
+                <h3 class="mdc-typography mdc-typography--subtitle2">Here are the personal Android applications developed by Jomar Tigcal, nost of which have been published on Google Play Store under <a href="https://play.google.com/store/apps/dev?id=5038784345581775968">his personal developer account</a> or under <a href="https://play.google.com/store/apps/dev?id=8263601599281267128">Tigcal Technologies Inc.</a>.</h3>
             </div>
             <div class="mdc-card mdc-card--outlined">
                 <div class="card__primary-action">
@@ -350,7 +356,7 @@
                 </div>
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-icons">
-                        <a href="https://www.sweldongpinoy.com" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                        <a href="https://www.sweldongpinoy.com" class="mdc-icon-button material-symbols-outlined mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
                     </div>
                 </div>
             </div>
@@ -365,7 +371,7 @@
                 </div>
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-icons">
-                        <a href="https://www.mp2calculator.com" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                        <a href="https://www.mp2calculator.com" class="mdc-icon-button material-symbols-outlined mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
                     </div>
                 </div>
             </div>
@@ -380,7 +386,7 @@
                 </div>
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-icons">
-                        <a href="https://www.botoko.app" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                        <a href="https://www.botoko.app" class="mdc-icon-button material-symbols-outlined mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
                     </div>
                 </div>
             </div>
@@ -395,7 +401,7 @@
                 </div>
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-icons">
-                        <a href="https://www.tollpinas.com" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                        <a href="https://www.tollpinas.com" class="mdc-icon-button material-symbols-outlined mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
                     </div>
                 </div>
             </div>
@@ -410,7 +416,7 @@
                 </div>
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-icons">
-                        <a href="https://www.budgetpinoy.com" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                        <a href="https://www.budgetpinoy.com" class="mdc-icon-button material-symbols-outlined mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
                     </div>
                 </div>
             </div>
@@ -425,7 +431,7 @@
                 </div>
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-icons">
-                        <a href="https://13thmonth.sweldongpinoy.com" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                        <a href="https://13thmonth.sweldongpinoy.com" class="mdc-icon-button material-symbols-outlined mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
                     </div>
                 </div>
             </div>
@@ -440,7 +446,7 @@
                 </div>
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-icons">
-                        <a href="https://chrome.google.com/webstore/detail/android-gradle-extension/fhpkfgflphcjlacgolciajdkfodapmcn" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                        <a href="https://chrome.google.com/webstore/detail/android-gradle-extension/fhpkfgflphcjlacgolciajdkfodapmcn" class="mdc-icon-button material-symbols-outlined mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
                     </div>
                 </div>
             </div>
@@ -455,7 +461,7 @@
                 </div>
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-icons">
-                        <a href="https://chrome.google.com/webstore/detail/pinoy-jokes-chrome-extens/olpaccmgjefjnmojjmhkobjgmofpogai" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                        <a href="https://chrome.google.com/webstore/detail/pinoy-jokes-chrome-extens/olpaccmgjefjnmojjmhkobjgmofpogai" class="mdc-icon-button material-symbols-outlined mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
                     </div>
                 </div>
             </div>
@@ -470,7 +476,7 @@
                 </div>
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-icons">
-                        <a href="https://chrome.google.com/webstore/detail/gdg-philippines/pbpopomlbomjpbmpfigaogeodiemmjbm" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                        <a href="https://chrome.google.com/webstore/detail/gdg-philippines/pbpopomlbomjpbmpfigaogeodiemmjbm" class="mdc-icon-button material-symbols-outlined mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
                     </div>
                 </div>
             </div>
@@ -488,7 +494,7 @@
                 </div>
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-icons">
-                        <a href="https://assistant.google.com/services/a/id/386ffed76114e24f" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                        <a href="https://assistant.google.com/services/a/id/386ffed76114e24f" class="mdc-icon-button material-symbols-outlined mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
                     </div>
                 </div>
             </div>
@@ -503,7 +509,7 @@
                 </div>
                 <div class="mdc-card__actions">
                     <div class="mdc-card__action-icons">
-                        <a href="https://assistant.google.com/services/a/id/631a617c588e09c9" class="mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
+                        <a href="https://assistant.google.com/services/a/id/631a617c588e09c9" class="mdc-icon-button material-symbols-outlined mdc-card__action mdc-card__action--icon--unbounded">open_in_new</a>
                     </div>
                 </div>
             </div>
@@ -571,5 +577,6 @@
             ga('create', 'UA-20395667-14', 'auto');
             ga('send', 'pageview');
         </script>
+        <script src="../script.js"></script>
     </body>
 </html>
